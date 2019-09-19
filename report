@@ -1,0 +1,121 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 14903710100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User should be in the telecom Home page",
+            "match": {
+              "location": "AddTariff.user_should_be_in_the_telecom_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2726075100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user click on add tariff plan button",
+            "match": {
+              "location": "AddTariff.user_click_on_add_tariff_plan_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "2D List",
+        "description": "",
+        "id": "addtariff-flow;2d-list",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1391893900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enter all the field with valid chargess",
+            "match": {
+              "location": "AddTariff.user_enter_all_the_field_with_valid_chargess(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "10",
+                  "110",
+                  "20",
+                  "80",
+                  "90",
+                  "109",
+                  "80"
+                ]
+              },
+              {
+                "cells": [
+                  "50",
+                  "30",
+                  "90",
+                  "80",
+                  "70",
+                  "50",
+                  "40"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2893079500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User clicks on submit button",
+            "match": {
+              "location": "AddTariff.user_clicks_on_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 110223600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user should be displayed Your Tariff added",
+            "match": {
+              "location": "AddTariff.user_should_be_displayed_Your_Tariff_added()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "AddTariff flow",
+    "description": "",
+    "id": "addtariff-flow",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/AddTariff.feature",
+    "tags": []
+  }
+]
