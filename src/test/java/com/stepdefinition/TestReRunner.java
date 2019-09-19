@@ -7,8 +7,8 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features="src\\test\\resources\\Features", glue="com.stepdefinition", 
-plugin="html:target", dryRun=true, tags= {"@sanity","@smoke" }, monochrome=true)
+@CucumberOptions(features="src\\test\\resources\\Features\\AddCustomer.feature", glue="com.stepdefinition", 
+plugin= {"rerun:src/test/resources/failed4.txt"} ,dryRun=true, tags= "@smoke" , monochrome=true)
 
 public class TestReRunner {
 

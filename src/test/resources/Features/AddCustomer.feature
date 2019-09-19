@@ -1,7 +1,7 @@
-@smoke @sanity
+ @sanity
 Feature: AddCustomer flow
 
-  Scenario: 
+  Scenario: @smoke
     Given User should be in the telecom home page
     And user click on add customer button
     When user enter all the field with valid datas

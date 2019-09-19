@@ -9,8 +9,8 @@ Feature: AddTariff flow
       | 10 | 110 | 20 | 80 | 90 | 109 | 80 |
     And User clicks on submit button
     Then user should be displayed Your Tariff added
-	
-	@smoke
+
+  @smoke
   Scenario: 2D List
     When user enter all the field with valid chargess
       | 10 | 110 | 20 | 80 | 90 | 109 | 80 |
@@ -18,13 +18,14 @@ Feature: AddTariff flow
     And User clicks on submit button
     Then user should be displayed Your Tariff added
 
-#  Scenario: 2D Map
-  #  When user enter all the fields with valid chargess
-   #   | A  | B   | C  | D  | E  | F   | G  |
-    #  | 10 | 110 | 20 | 80 | 90 | 109 | 80 |
-     # | 50 |  30 | 90 | 80 | 70 |  50 | 40 |
-    #And User clicks on submit button
-    #Then user should be displayed Your Tariff added
+  Scenario: 2D Map
+    When user enter all the fields with validd chargess
+      | A  | B   | C  | D  | E  | F   | G  |
+      | 10 | 110 | 20 | 80 | 90 | 109 | 80 |
+      | 50 |  30 | 90 | 80 | 70 |  50 | 40 |
+      | 89 |  99 | 89 | 60 | 70 |  50 | 10 |
+    And User clicks on submit button
+    Then user should be displayed Your Tariff added
 
   Scenario Outline: 
     When user enter all the field with valid chargess"<A>""<B>""<C>""<D>""<E>""<F>""<G>"
